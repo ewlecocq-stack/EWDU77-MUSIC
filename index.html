@@ -5,229 +5,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#080510">
-
     <title>EWDU77 MUSIC | Univers musical</title>
-    <meta name="description" content="Découvre l'univers musical de EWDU77. Écoute tous les morceaux officiels.">
-
+    <meta name="description" content="Découvre l'univers musical de EWDU77.">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">EWDU77<span>MUSIC</span></div>
+<header class="header">
+    <div class="logo">EWDU77<span>MUSIC</span></div>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#discographie">Musique</a>
+        <a href="#artiste">Artiste</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#discographie">Musique</a>
-            <a href="#artiste">Artiste</a>
-        </nav>
-    </header>
+<section class="hero" id="accueil">
+    <div class="hero-content">
+        <p class="artist-name">ARTISTE INDÉPENDANT</p>
+        <h1>EWDU<span>77</span></h1>
+        <h2>MON UNIVERS MUSICAL</h2>
+        <p>Des histoires, des émotions et des sons. Bienvenue dans mon univers.</p>
+        <a href="#discographie" class="hero-button">DÉCOUVRIR MES MUSIQUES</a>
+    </div>
+</section>
 
-    <!-- ACCUEIL -->
-    <section class="hero" id="accueil">
-        <div class="hero-content">
-            <p class="artist-name">ARTISTE INDÉPENDANT</p>
+<section class="discography" id="discographie">
 
-            <h1>EWDU<span>77</span></h1>
+    <div class="section-title">
+        <p>EWDU77 OFFICIAL</p>
+        <h2>MA DISCOGRAPHIE</h2>
+        <span>05 TITRES DISPONIBLES</span>
+    </div>
 
-            <h2>MON UNIVERS MUSICAL</h2>
+    <div class="music-grid">
 
-            <p>
-                Des histoires, des émotions et des sons.
-                Bienvenue dans mon univers.
-            </p>
-
-            <a href="#discographie" class="hero-button">
-                DÉCOUVRIR MES MUSIQUES
-            </a>
-        </div>
-    </section>
-
-    <!-- DISCOGRAPHIE -->
-    <section class="discography" id="discographie">
-
-        <div class="section-title">
-            <p>EWDU77 OFFICIAL</p>
-            <h2>MA DISCOGRAPHIE</h2>
-            <span>04 TITRES DISPONIBLES</span>
-        </div>
-
-        <div class="music-grid">
-
-            <!-- MUSIQUE 1 -->
-            <article class="music-card">
-                <div class="track-number">01</div>
-
-                <img
-                    class="cover"
-                    src="images/roblox-legacy.jpg"
-                    alt="Pochette Roblox Legacy"
-                >
-
-                <div class="music-info">
-                    <h3>ROBLOX LEGACY</h3>
-                    <p>Le début d'une légende</p>
-                </div>
-
-                <div class="custom-player">
-                    <audio preload="metadata">
-                        <source src="musiques/roblox-legacy.mp3" type="audio/mpeg">
-                    </audio>
-
-                    <button class="play-btn" aria-label="Lire">▶</button>
-
-                    <div class="player-content">
-                        <div class="player-top">
-                            <span class="time">0:00 / 0:00</span>
-                        </div>
-
-                        <input class="progress" type="range" min="0" max="100" value="0">
-
-                        <div class="volume-area">
-                            <span>VOLUME</span>
-                            <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
-                        </div>
+        <!-- 01 ROBLOX LEGACY -->
+        <article class="music-card">
+            <div class="track-number">01</div>
+            <img class="cover" src="images/roblox-legacy.jpg" alt="Roblox Legacy">
+            <div class="music-info">
+                <h3>ROBLOX LEGACY</h3>
+                <p>Le début d'une légende</p>
+            </div>
+            <div class="custom-player">
+                <audio preload="metadata">
+                    <source src="musiques/roblox-legacy.mp3" type="audio/mpeg">
+                </audio>
+                <button class="play-btn" aria-label="Lire">▶</button>
+                <div class="player-content">
+                    <div class="player-top"><span class="time">0:00 / 0:00</span></div>
+                    <input class="progress" type="range" min="0" max="100" value="0">
+                    <div class="volume-area">
+                        <span>VOLUME</span>
+                        <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- MUSIQUE 2 -->
-            <article class="music-card">
-                <div class="track-number">02</div>
-
-                <img
-                    class="cover"
-                    src="images/ewdu77-vs-brayan.jpg"
-                    alt="Pochette EWDU77 VS BRAYAN"
-                >
-
-                <div class="music-info">
-                    <h3>EWDU77 VS BRAYAN</h3>
-                    <p>Le clash commence</p>
-                </div>
-
-                <div class="custom-player">
-                    <audio preload="metadata">
-                        <source src="musiques/ewdu77-vs-brayan.mp3" type="audio/mpeg">
-                    </audio>
-
-                    <button class="play-btn" aria-label="Lire">▶</button>
-
-                    <div class="player-content">
-                        <div class="player-top">
-                            <span class="time">0:00 / 0:00</span>
-                        </div>
-
-                        <input class="progress" type="range" min="0" max="100" value="0">
-
-                        <div class="volume-area">
-                            <span>VOLUME</span>
-                            <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
-                        </div>
+        <!-- 02 EWDU77 VS BRAYAN -->
+        <article class="music-card">
+            <div class="track-number">02</div>
+            <img class="cover" src="images/ewdu77-vs-brayan.jpg" alt="EWDU77 VS BRAYAN">
+            <div class="music-info">
+                <h3>EWDU77 VS BRAYAN</h3>
+                <p>Le clash commence</p>
+            </div>
+            <div class="custom-player">
+                <audio preload="metadata">
+                    <source src="musiques/ewdu77-vs-brayan.mp3" type="audio/mpeg">
+                </audio>
+                <button class="play-btn" aria-label="Lire">▶</button>
+                <div class="player-content">
+                    <div class="player-top"><span class="time">0:00 / 0:00</span></div>
+                    <input class="progress" type="range" min="0" max="100" value="0">
+                    <div class="volume-area">
+                        <span>VOLUME</span>
+                        <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- MUSIQUE 3 -->
-            <article class="music-card">
-                <div class="track-number">03</div>
-
-                <img
-                    class="cover"
-                    src="images/clash.jpg"
-                    alt="Pochette CLASH"
-                >
-
-                <div class="music-info">
-                    <h3>CLASH</h3>
-                    <p>EWDU77</p>
-                </div>
-
-                <div class="custom-player">
-                    <audio preload="metadata">
-                        <source src="musiques/clash.mp3" type="audio/mpeg">
-                    </audio>
-
-                    <button class="play-btn" aria-label="Lire">▶</button>
-
-                    <div class="player-content">
-                        <div class="player-top">
-                            <span class="time">0:00 / 0:00</span>
-                        </div>
-
-                        <input class="progress" type="range" min="0" max="100" value="0">
-
-                        <div class="volume-area">
-                            <span>VOLUME</span>
-                            <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
-                        </div>
+        <!-- 03 CLASH -->
+        <article class="music-card">
+            <div class="track-number">03</div>
+            <img class="cover" src="images/clash.jpg" alt="CLASH">
+            <div class="music-info">
+                <h3>CLASH</h3>
+                <p>EWDU77</p>
+            </div>
+            <div class="custom-player">
+                <audio preload="metadata">
+                    <source src="musiques/clash.mp3" type="audio/mpeg">
+                </audio>
+                <button class="play-btn" aria-label="Lire">▶</button>
+                <div class="player-content">
+                    <div class="player-top"><span class="time">0:00 / 0:00</span></div>
+                    <input class="progress" type="range" min="0" max="100" value="0">
+                    <div class="volume-area">
+                        <span>VOLUME</span>
+                        <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-            <!-- MUSIQUE 4 -->
-            <article class="music-card">
-                <div class="track-number">04</div>
-
-                <img
-                    class="cover"
-                    src="images/au-dela-du-code.jpg"
-                    alt="Pochette AU-DELÀ DU CODE"
-                >
-
-                <div class="music-info">
-                    <h3>AU-DELÀ DU CODE</h3>
-                    <p>EWDU77</p>
-                </div>
-
-                <div class="custom-player">
-                    <audio preload="metadata">
-                        <source src="musiques/au-dela-du-code.mp3" type="audio/mpeg">
-                    </audio>
-
-                    <button class="play-btn" aria-label="Lire">▶</button>
-
-                    <div class="player-content">
-                        <div class="player-top">
-                            <span class="time">0:00 / 0:00</span>
-                        </div>
-
-                        <input class="progress" type="range" min="0" max="100" value="0">
-
-                        <div class="volume-area">
-                            <span>VOLUME</span>
-                            <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
-                        </div>
+        <!-- 04 AU-DELÀ DU CODE -->
+        <article class="music-card">
+            <div class="track-number">04</div>
+            <img class="cover" src="images/au-dela-du-code.jpg" alt="AU-DELÀ DU CODE">
+            <div class="music-info">
+                <h3>AU-DELÀ DU CODE</h3>
+                <p>EWDU77</p>
+            </div>
+            <div class="custom-player">
+                <audio preload="metadata">
+                    <source src="musiques/au-dela-du-code.mp3" type="audio/mpeg">
+                </audio>
+                <button class="play-btn" aria-label="Lire">▶</button>
+                <div class="player-content">
+                    <div class="player-top"><span class="time">0:00 / 0:00</span></div>
+                    <input class="progress" type="range" min="0" max="100" value="0">
+                    <div class="volume-area">
+                        <span>VOLUME</span>
+                        <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
                     </div>
                 </div>
-            </article>
+            </div>
+        </article>
 
-        </div>
-    </section>
+        <!-- 05 L'HISTOIRE D'UN RÊVE -->
+        <article class="music-card">
+            <div class="track-number">05</div>
+            <img class="cover" src="images/histoire-dun-reve.jpg" alt="L'Histoire d'un rêve">
+            <div class="music-info">
+                <h3>L'HISTOIRE D'UN RÊVE</h3>
+                <p>EWDU77</p>
+            </div>
+            <div class="custom-player">
+                <audio preload="metadata">
+                    <source src="musiques/histoire-dun-reve.mp3" type="audio/mpeg">
+                </audio>
+                <button class="play-btn" aria-label="Lire">▶</button>
+                <div class="player-content">
+                    <div class="player-top"><span class="time">0:00 / 0:00</span></div>
+                    <input class="progress" type="range" min="0" max="100" value="0">
+                    <div class="volume-area">
+                        <span>VOLUME</span>
+                        <input class="volume" type="range" min="0" max="1" step="0.01" value="1">
+                    </div>
+                </div>
+            </div>
+        </article>
 
-    <!-- ARTISTE -->
-    <section class="artist-section" id="artiste">
-        <div class="artist-content">
-            <p>QUI EST DERRIÈRE LA MUSIQUE ?</p>
-            <h2>EWDU77</h2>
+    </div>
+</section>
 
-            <p>
-                Créateur de musiques, d'histoires et d'univers.
-                Chaque morceau raconte quelque chose.
-            </p>
-        </div>
-    </section>
+<section class="artist-section" id="artiste">
+    <div class="artist-content">
+        <p>QUI EST DERRIÈRE LA MUSIQUE ?</p>
+        <h2>EWDU77</h2>
+        <p>Créateur de musiques, d'histoires et d'univers. Chaque morceau raconte quelque chose.</p>
+    </div>
+</section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <h2>EWDU77 MUSIC</h2>
-        <p>MON UNIVERS. MES SONS. MES HISTOIRES.</p>
-        <p>© 2026 EWDU77 - Tous droits réservés.</p>
-    </footer>
+<footer class="footer">
+    <h2>EWDU77 MUSIC</h2>
+    <p>MON UNIVERS. MES SONS. MES HISTOIRES.</p>
+    <p>© 2026 EWDU77 - Tous droits réservés.</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
