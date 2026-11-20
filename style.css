@@ -475,3 +475,61 @@ footer p {
         transition-duration: 0.01ms !important;
     }
 }
+
+
+/* CORRECTION : ALIGNEMENT DES CARTES MUSICALES */
+
+.music-card {
+    display: grid !important;
+    grid-template-columns: 190px minmax(150px, 0.8fr) minmax(300px, 2fr);
+    align-items: center;
+    gap: 28px;
+    position: relative;
+    padding: 24px 30px;
+    box-sizing: border-box;
+    min-height: 245px;
+}
+
+.music-card .cover {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+}
+
+.music-card .music-info {
+    min-width: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.music-card .music-info h3 {
+    overflow-wrap: break-word;
+}
+
+.music-card .custom-player {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+/* VERSION MOBILE */
+@media (max-width: 750px) {
+    .music-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 22px;
+    }
+
+    .music-card .cover {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+
+    .music-card .custom-player {
+        width: 100%;
+    }
+}
